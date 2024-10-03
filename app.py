@@ -27,7 +27,7 @@ def train():
     return "Training Successfull!!"
 
 # route for the detection
-@app.route("/predict", methods=['POST', 'GET'])
+@app.route("/predict", methods=['POST'])
 @cross_origin()
 def predict():
     try:
