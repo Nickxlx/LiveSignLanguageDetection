@@ -34,7 +34,7 @@ class ModelTrainer:
             model_config_file_name = self.model_trainer_config.weight_name.split(".")[0]
             print(model_config_file_name)
 
-            config = read_yaml_file(f"yolov5/models/{model_config_file_name}.yaml")
+            config = read_yaml_file(f"yolov5/models/custom_yolov5s.yaml")
             config['nc'] = int(num_classes)
 
             # creating the custmize yaml file with the same no of classes 
@@ -43,7 +43,7 @@ class ModelTrainer:
 
             os.system(f"cd yolov5/ && python train.py --img 416 --batch {self.model_trainer_config.batch_size} --epochs {self.model_trainer_config.no_epochs} --data ../data.yaml --cfg ./models/custom_yolov5s.yaml --weights {self.model_trainer_config.weight_name} --name yolov5s_results  --cache")
 
-            shutil.copy("yolov5/runs/train/yolov5s_results/weights/best.pt", "yolov5/")
+            shutil.copy("yolov5/runs/train/yolov5s_results/weights/best.pt", "yolov5/") # copy the trained model in the yolov5s folder
             os.makedirs(self.model_trainer_config.model_trainer_dir, exist_ok=True)
             shutil.copy("yolov5/runs/train/yolov5s_results/weights/best.pt", self.model_trainer_config.model_trainer_dir)
 
