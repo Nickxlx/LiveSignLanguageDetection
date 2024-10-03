@@ -1,4 +1,5 @@
-# End-to-end-Sign-Language-Detection
+# Sign Language Detection Using YOLOv5
+This project aims to build a Sign Language Detection model using the YOLOv5 architecture. The model is trained to detect and classify sign language gestures from images or videos.
 
 1. constants
 2. entity
