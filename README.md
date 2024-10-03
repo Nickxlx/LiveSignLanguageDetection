@@ -8,11 +8,23 @@ This project aims to build a Sign Language Detection model using the YOLOv5 arch
 5. app.py
 
 ## How to Run
+1. Clone the repo to locals
 
-1. conda create -n nenv python=3.7 -y
-2. conda activate nenv
-3. pip install -r requirements.txt
-4. python app.py
-5. open in browser: http://localhost:8080/train (for training the model) or skip this if you want to use trained model
-6. For Prediction: http://localhost:8080/ (For Uploding the data)
-7. For Live Prediction: http://localhost:8080/ (For live Prediction)
+```bash
+conda create -n nenv python=3.7 -y
+```
+
+```bash
+conda activate nenv
+```
+
+```bash
+pip install -r requirements.txt
+```
+
+```bash
+python app.py
+```
+- open in browser: http://localhost:8080/train (for training the model) or skip this if you want to use trained model because its gonna takes time.
+- For Prediction: http://localhost:8080/ (For Uploding the data)
+- For Live Prediction: http://localhost:8080/ (For live Prediction)
