@@ -22,8 +22,8 @@ Sign language is a vital form of communication for the hearing impaired, and aut
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/Nickxlx/SignLanguageDetection.git
-cd SignLanguageDetection
+git clone https://github.com/Nickxlx/<repository_name>.git
+cd repository_name
 ```
 
 ### 2. Set Up Environment
